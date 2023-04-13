@@ -1,0 +1,30 @@
+﻿   Device drivers
+Device drivers are necessary to permit a computer to interface and interact with specific devices. They define the messages and mechanisms whereby the computer -- the OS and applications -- can access the device or make requests for the device to fulfill.
+
+Device Drivers:-
+
+         1.To accept request from the device-independent software above to it.
+      2.Making sure that the request is executed successfully.   
+      3.Interact with the device controller to take and give I/O and perform                     required error handling.    
+  device management :-
+An essential part of an operating system is device management, which controls how software applications interact with the hardware attached to the computer system. It entails the process of locating, setting up, allocating, and managing access to devices like printers, scanners, storage units, and network interfaces. 
+Device Allocation Techniques
+Device allocation techniques are used to manage the allocation of hardware resources, such as input/output (I/O) devices, to different processes or users in an operating system. There are two main techniques for device allocation: static allocation and dynamic allocation.
+    • Static allocation − Static allocation is a technique in which devices are assigned to processes or users at system startup and remain assigned until the system is shut down. In static allocation, the operating system allocates specific devices to specific processes or users based on predetermined criteria, such as priority, device type, or user ID. Static allocation is simple and efficient, but it can lead to inefficient use of resources if a device is not being fully utilized by the process or user it is assigned to.
+Dynamic allocation − Devices are temporarily allocated to processes or users using a technique called dynamic allocation. When devices are allocated dynamically, the operating system assigns them to users or processes depending on their current requirements and releases them when no longer required. 
+
+Diff between file and directory
+ is important to understand the difference between a file system and a directory. A file system is a section of hard disk that has been allocated to contain files. This section of hard disk is accessed by mounting the file system over a directory.
+Logical structure
+A file system's logical structure refers to how the files and directories are organized and presented to the user or application. It defines how data is logically grouped and accessed, regardless of how it is physically stored on the storage media.
+Physical structure
+A file system's physical structure refers to how the data is physically stored on the storage media, such as hard drives, solid-state drives, or other types of storage devices. It defines how the data is physically organized and accessed on the storage media, such as the number of tracks, sectors, and clusters.
+
+The inode (index node) is a data structure in a Unix-style file system that describes a file-system object such as a file or a directory. Each inode stores the attributes and disk block locations of the object's data.
+ 
+i/o operations
+synchronous and asynchronous I/O operations refer to the way input/output (I/O) operations are managed in a program.Synchronous I/O operations are blocking, which means that the program will pause while waiting for an I/O operation to complete. During this time, the program cannot perform any other tasks. Once the I/O operation is complete, the program resumes execution from where it left off. 
+
+In synchronous I/O, the program waits for the I/O operation to finish before continuing.Asynchronous I/O operations, on the other hand, are non-blocking. This means that the program does not pause and wait for the I/O operation to complete. Instead, it continues executing other tasks while the I/O operation is in progress. Once the I/O operation is complete, the program is notified and can handle the result.An example of synchronous I/O is reading a file using a blocking I/O function like read(). If a program calls read() to read a file, it will wait until the entire file has been read before it can continue executing.
+
+An example of asynchronous I/O is reading a file using non-blocking I/O functions like select() or epoll(). If a program uses these functions to read a file, it can continue executing other tasks while the file is being read. Once the file has been read, the program is notified and can handle the result.
